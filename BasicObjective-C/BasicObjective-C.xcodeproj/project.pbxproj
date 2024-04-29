@@ -10,6 +10,8 @@
 		185C8FA52BDF6890007017E6 /* Friend+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C8FA42BDF6890007017E6 /* Friend+Info.m */; };
 		185C8FA82BDF6BF5007017E6 /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C8FA72BDF6BF5007017E6 /* NSDate+Helpers.m */; };
 		185C8FAB2BDF7021007017E6 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C8FAA2BDF7021007017E6 /* Pet.m */; };
+		185C8FAE2BDF7915007017E6 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C8FAD2BDF7915007017E6 /* Cat.m */; };
+		185C8FB12BDF7D19007017E6 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C8FB02BDF7D19007017E6 /* BlockTest.m */; };
 		3F1B9E852BD6B7B900523893 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B9E842BD6B7B900523893 /* AppDelegate.m */; };
 		3F1B9E882BD6B7B900523893 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B9E872BD6B7B900523893 /* SceneDelegate.m */; };
 		3F1B9E8B2BD6B7B900523893 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B9E8A2BD6B7B900523893 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 		185C8FA72BDF6BF5007017E6 /* NSDate+Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
 		185C8FA92BDF7021007017E6 /* Pet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
 		185C8FAA2BDF7021007017E6 /* Pet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		185C8FAC2BDF7915007017E6 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		185C8FAD2BDF7915007017E6 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		185C8FAF2BDF7D19007017E6 /* BlockTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
+		185C8FB02BDF7D19007017E6 /* BlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 		3F1B9E802BD6B7B900523893 /* BasicObjective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BasicObjective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1B9E832BD6B7B900523893 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F1B9E842BD6B7B900523893 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +87,10 @@
 				3F1B9E8A2BD6B7B900523893 /* ViewController.m */,
 				185C8FA92BDF7021007017E6 /* Pet.h */,
 				185C8FAA2BDF7021007017E6 /* Pet.m */,
+				185C8FAC2BDF7915007017E6 /* Cat.h */,
+				185C8FAD2BDF7915007017E6 /* Cat.m */,
+				185C8FAF2BDF7D19007017E6 /* BlockTest.h */,
+				185C8FB02BDF7D19007017E6 /* BlockTest.m */,
 				185C8FA32BDF6890007017E6 /* Friend+Info.h */,
 				185C8FA42BDF6890007017E6 /* Friend+Info.m */,
 				3F1B9E9E2BD6B7D400523893 /* Friend.h */,
@@ -169,9 +179,11 @@
 				3F1B9E8B2BD6B7B900523893 /* ViewController.m in Sources */,
 				185C8FAB2BDF7021007017E6 /* Pet.m in Sources */,
 				185C8FA52BDF6890007017E6 /* Friend+Info.m in Sources */,
+				185C8FAE2BDF7915007017E6 /* Cat.m in Sources */,
 				3F1B9E9D2BD6B7CD00523893 /* Friend.m in Sources */,
 				3F1B9E852BD6B7B900523893 /* AppDelegate.m in Sources */,
 				3F1B9E962BD6B7BA00523893 /* main.m in Sources */,
+				185C8FB12BDF7D19007017E6 /* BlockTest.m in Sources */,
 				3F1B9E882BD6B7B900523893 /* SceneDelegate.m in Sources */,
 				185C8FA82BDF6BF5007017E6 /* NSDate+Helpers.m in Sources */,
 			);
