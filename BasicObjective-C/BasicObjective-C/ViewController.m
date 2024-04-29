@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 #import "Friend.h"
+#import "Friend+Info.h"
+#import "NSDate+Helpers.h"
 
 @interface ViewController ()
 
@@ -19,9 +21,23 @@
     // Do any additional setup after loading the view.
     SEL btnSelector = @selector(onTestBtnClicked:);
     
-    Friend *createdFriend = [Friend getAFriend];
+//    [_selectorTestButton addTarget:self action:btnSelector forControlEvents:UIControlEventTouchUpInside];
     
-    NSLog(@"createdFriend : %@", [createdFriend nickName]);
+    Friend *aFriend = [[Friend alloc] init];
+    
+    [aFriend setNickName:@"안녕하세요 홍길동입니다."];
+    
+    NSString *info = [aFriend getInfo];
+    NSLog(@"info: %@", info);
+    
+    NSDate *today = [NSDate date];
+    
+    NSDate *yesterday = [NSDate dateWithTimeIntervalSinceNow:-(60.0f*60.0f*24.0f)];
+    
+    [today isToday];
+    
+    NSLog(yesterday ? @"오늘입니다" : @"오늘이 아닙니다");
+    
 }
 
 - (void)onTestBtnClicked:(UIButton *) sender {
@@ -35,11 +51,20 @@
     NSLog(@"안녕하세요!");
 }
 
+
+/// 반환이 있는 형태
+///  - return 랜덤 숫자
 - (int)getRandomNumber {
     NSLog(@"%@", NSStringFromSelector(_cmd));
     
     /// 0~99 무작위 수
     return arc4random_uniform(100);
+}
+
+- (void)saySomethingWithParam:(NSInteger) number {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
+    NSLog(@"number: %d", number);
 }
 
 @end
