@@ -9,8 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NSString *MyString;
+
+typedef void(^DoneBlock)(NSString *);
+
 @interface BlockTest : NSObject
 {
+    NSString *name;
+    MyString myName;
+    
     void (^someBlock)(void);
     void (^someBlockWithParam)(NSString *);
     void (^someBlockWithMultiParam)(NSString *, int);
@@ -20,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)someFunctionWithParam:(NSString *)name;
 
 - (void)someFunctionWithMultiParams:(NSString *)name withAge:(int)age;
+
+- (void)someFunctionWithBlockParam:(void(^)(NSString *))done;
+
+- (void)someFunctionWithTypeDefBlockParam:(DoneBlock)done;
 
 @end
 

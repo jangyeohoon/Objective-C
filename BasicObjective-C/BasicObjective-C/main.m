@@ -19,6 +19,14 @@ int main(int argc, char * argv[]) {
         
         BlockTest *blockTest = [[BlockTest alloc] init];
         
+        [blockTest someFunctionWithBlockParam:^(NSString *name) {
+            NSLog(@"%s, line: %d, %@", __func__, __LINE__, name);
+        }];
+        
+        [blockTest someFunctionWithTypeDefBlockParam:^(NSString *name) {
+            NSLog(@"%s, line: %d, %@", __func__, __LINE__, name);
+        }];
+        
         [blockTest someFunction];
         
         Pet *myCat = [[Pet alloc] init];

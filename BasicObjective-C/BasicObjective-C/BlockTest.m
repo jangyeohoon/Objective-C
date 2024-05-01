@@ -41,4 +41,15 @@
     someBlockWithMultiParam(name, age);
 }
 
+- (void)someFunctionWithBlockParam:(void(^)(NSString *))done;
+{
+    NSLog(@"%s, line: %d, %@", __func__, __LINE__, @"");
+    done(@"완료");
+}
+
+- (void)someFunctionWithTypeDefBlockParam:(DoneBlock)done;
+{
+    NSLog(@"%s, line: %d, %@", __func__, __LINE__, @"");
+    done(@"DoneBlock완료");
+}
 @end
