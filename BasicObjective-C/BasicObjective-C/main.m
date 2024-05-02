@@ -27,6 +27,8 @@ int main(int argc, char * argv[]) {
             NSLog(@"%s, line: %d, %@", __func__, __LINE__, name);
         }];
         
+        [blockTest someFunctionWithOptionalBlockParam:nil];
+         
         [blockTest someFunction];
         
         Pet *myCat = [[Pet alloc] init];

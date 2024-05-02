@@ -52,4 +52,12 @@
     NSLog(@"%s, line: %d, %@", __func__, __LINE__, @"");
     done(@"DoneBlock완료");
 }
+
+- (void)someFunctionWithOptionalBlockParam:(void (^ __nullable)(NSString * _Nonnull))done
+{
+    NSLog(@"%s, line: %d, %@", __func__, __LINE__, @"");
+    if (done != nil) {
+        done(@"완료 DoneBlock");
+    }
+}
 @end
