@@ -6,10 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MyPet.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Cat : NSObject
+@protocol CatDelegate <NSObject>
+
+- (void)doMoreCrying;
+
+@end
+
+@interface Cat : NSObject <MyPet>
 {
     NSString *name;
     int age;

@@ -45,4 +45,8 @@
     return self;
 }
 
+- (void)doCrying {
+    NSLog(@"%s, line: %d, %@", __func__, __LINE__, @"");
+}
+
 @end

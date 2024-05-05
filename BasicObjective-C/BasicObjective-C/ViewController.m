@@ -9,6 +9,7 @@
 #import "Friend.h"
 #import "Friend+Info.h"
 #import "NSDate+Helpers.h"
+#import "Cat.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    SEL btnSelector = @selector(onTestBtnClicked:);
+    Cat *myCat = [[Cat alloc] init];
     
 //    [_selectorTestButton addTarget:self action:btnSelector forControlEvents:UIControlEventTouchUpInside];
     

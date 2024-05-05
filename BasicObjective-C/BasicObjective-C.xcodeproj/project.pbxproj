@@ -47,6 +47,7 @@
 		3F1B9E952BD6B7BA00523893 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F1B9E9C2BD6B7CD00523893 /* Friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		3F1B9E9E2BD6B7D400523893 /* Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		3FFEA9762BE7D23700A3C9C2 /* MyPet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				185C8FAA2BDF7021007017E6 /* Pet.m */,
 				185C8FAC2BDF7915007017E6 /* Cat.h */,
 				185C8FAD2BDF7915007017E6 /* Cat.m */,
+				3FFEA9762BE7D23700A3C9C2 /* MyPet.h */,
 				185C8FAF2BDF7D19007017E6 /* BlockTest.h */,
 				185C8FB02BDF7D19007017E6 /* BlockTest.m */,
 				185C8FA32BDF6890007017E6 /* Friend+Info.h */,
