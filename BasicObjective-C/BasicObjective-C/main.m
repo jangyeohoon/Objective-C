@@ -43,14 +43,22 @@ int main(int argc, char * argv[]) {
         
         [myCat doCry:@"개냥이"];
         
-        Cat *myCat1 = [[Cat alloc] init];
-        Cat *myCat2 = [[Cat alloc] initWithAge:10];
-        Cat *myCat3 = [[Cat alloc] initWithName:@"개냥이"];
-        Cat *myCat4 = [[Cat alloc] initWithNameAndAge:@"야옹이" age:3];
+        int age = 3;
+        float percent = 0.3;
+        long double pi = 3.14159265358979;
+        NSNumber *count = @10;
+        
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, sizeof(age));
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, sizeof(percent));
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, sizeof(pi));
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, sizeof(count));
+        
+        NSObject *someObj = [[NSObject alloc] init];
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, sizeof(someObj));
         
         struct coder aCoder;
         
-        aCoder.name = @"여훈";
+        aCoder.name = @"yh";
         aCoder.age = 20;
         
         Dog myDog;
