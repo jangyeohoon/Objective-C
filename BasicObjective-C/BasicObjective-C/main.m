@@ -61,6 +61,10 @@ int main(int argc, char * argv[]) {
         aCoder.name = @"yh";
         aCoder.age = 20;
         
+        // new
+        Cat *cuteCat = [Cat new];
+        id smallCat = [Cat new];
+        
         Dog myDog;
         
         myDog.name = @"멍멍이";
