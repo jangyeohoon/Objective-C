@@ -65,6 +65,13 @@ int main(int argc, char * argv[]) {
         Cat *cuteCat = [Cat new];
         id smallCat = [Cat new];
         
+        Dummy *dummy = [[Dummy alloc] init];
+        
+        NSLog(@"%s, line: %d, %@", __func__, __LINE__, [dummy retainCount]);
+        [dummy retain];
+        
+        NSLog(@"%s, line: %d, %@", __func__, __LINE__, [dummy retainCount]);
+        
         Dog myDog;
         
         myDog.name = @"멍멍이";
@@ -72,11 +79,11 @@ int main(int argc, char * argv[]) {
         
         Dog *myDogRef = &myDog;
         
-        NSString *myDogName = myDogRef->name;
+        NSString *myDogName = myDogRef -> name;
         
         myDogRef->name = @"멍뭉이";
         
-        NSString *checkMyDogName = myDogRef->name;
+        NSString *checkMyDogName = myDogRef -> name;
         
         [blockTest someFunctionWithParam:@"hihi"];
         [blockTest someFunctionWithMultiParams:@"hihihi" withAge:10];
