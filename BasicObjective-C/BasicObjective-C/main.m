@@ -10,6 +10,7 @@
 #import "Pet.h"
 #import "Cat.h"
 #import "BlockTest.h"
+#import "Dummy.h"
 
 typedef struct{
     NSString *name;
@@ -67,10 +68,10 @@ int main(int argc, char * argv[]) {
         
         Dummy *dummy = [[Dummy alloc] init];
         
-        NSLog(@"%s, line: %d, %@", __func__, __LINE__, [dummy retainCount]);
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, (unsigned long)[dummy retainCount]);
         [dummy retain];
         
-        NSLog(@"%s, line: %d, %@", __func__, __LINE__, [dummy retainCount]);
+        NSLog(@"%s, line: %d, %lu", __func__, __LINE__, (unsigned long)[dummy retainCount]);
         
         Dog myDog;
         

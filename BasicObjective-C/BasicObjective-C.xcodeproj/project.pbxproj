@@ -20,6 +20,7 @@
 		3F1B9E932BD6B7BA00523893 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3F1B9E922BD6B7BA00523893 /* Base */; };
 		3F1B9E962BD6B7BA00523893 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B9E952BD6B7BA00523893 /* main.m */; };
 		3F1B9E9D2BD6B7CD00523893 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B9E9C2BD6B7CD00523893 /* Friend.m */; };
+		3F3A16832BF4980A00F3FC43 /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3A16822BF4980A00F3FC43 /* Dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		3F1B9E952BD6B7BA00523893 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F1B9E9C2BD6B7CD00523893 /* Friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		3F1B9E9E2BD6B7D400523893 /* Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		3F3A16812BF4980A00F3FC43 /* Dummy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dummy.h; sourceTree = "<group>"; };
+		3F3A16822BF4980A00F3FC43 /* Dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
 		3FFEA9762BE7D23700A3C9C2 /* MyPet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPet.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +105,8 @@
 				3F1B9E912BD6B7BA00523893 /* LaunchScreen.storyboard */,
 				3F1B9E942BD6B7BA00523893 /* Info.plist */,
 				3F1B9E952BD6B7BA00523893 /* main.m */,
+				3F3A16812BF4980A00F3FC43 /* Dummy.h */,
+				3F3A16822BF4980A00F3FC43 /* Dummy.m */,
 				185C8FA62BDF6BF5007017E6 /* NSDate+Helpers.h */,
 				185C8FA72BDF6BF5007017E6 /* NSDate+Helpers.m */,
 			);
@@ -183,6 +188,7 @@
 				185C8FA52BDF6890007017E6 /* Friend+Info.m in Sources */,
 				185C8FAE2BDF7915007017E6 /* Cat.m in Sources */,
 				3F1B9E9D2BD6B7CD00523893 /* Friend.m in Sources */,
+				3F3A16832BF4980A00F3FC43 /* Dummy.m in Sources */,
 				3F1B9E852BD6B7B900523893 /* AppDelegate.m in Sources */,
 				3F1B9E962BD6B7BA00523893 /* main.m in Sources */,
 				185C8FB12BDF7D19007017E6 /* BlockTest.m in Sources */,
