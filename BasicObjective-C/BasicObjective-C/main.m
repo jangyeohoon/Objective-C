@@ -88,6 +88,13 @@ int main(int argc, char * argv[]) {
         
         [blockTest someFunctionWithParam:@"hihi"];
         [blockTest someFunctionWithMultiParams:@"hihihi" withAge:10];
+        
+        Dummy *dummys = [[Dummy alloc] initWithNameAndAge:@"abc" age:10];
+        Dummy *retainedDummy = [dummys retain];
+        Dummy *dummyClone = [dummys  copy];
+        NSLog(@"%s, line: %d, %@",__func__, __LINE__, dummys);
+        NSLog(@"%s, line: %d, %@",__func__, __LINE__, retainedDummy);
+        NSLog(@"%s, line: %d, %@",__func__, __LINE__, dummyClone);
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }

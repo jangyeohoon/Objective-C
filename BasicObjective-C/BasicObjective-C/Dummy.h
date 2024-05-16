@@ -9,7 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Dummy : NSObject
+@interface Dummy : NSObject <NSCopying>
+{
+    NSString *name;
+    int age;
+    
+}
+- (id)initWithNameAndAge:(NSString *)nameValue age:(int)ageValue;
 
 @end
 
