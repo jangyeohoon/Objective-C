@@ -95,6 +95,9 @@ int main(int argc, char * argv[]) {
         NSLog(@"%s, line: %d, %@",__func__, __LINE__, dummys);
         NSLog(@"%s, line: %d, %@",__func__, __LINE__, retainedDummy);
         NSLog(@"%s, line: %d, %@",__func__, __LINE__, dummyClone);
+        
+        Dummy *honggildong = [dummy retain];
+        [honggildong release];
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
