@@ -14,6 +14,9 @@
 /// 외부에서 접근 가능 - 멤버 변수
 @property NSString *nickName;
 
+@property NSNumber *age;
+ 
+
 /// 인스턴스 메서드 - 객체 생성 후 그 녀석이 가지고 있는 메서드
 - (void)sayHello;
 
